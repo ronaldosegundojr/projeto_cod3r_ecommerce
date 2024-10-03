@@ -5,9 +5,10 @@ export interface ProdutoItemProps {
 }
 
 export default function ProdutoItem(props: ProdutoItemProps){
+    const { produto } = props
     return (
         <div>
-            <h1>Produto Item</h1>
+            {produto.nome}
         </div>
     )
 }
